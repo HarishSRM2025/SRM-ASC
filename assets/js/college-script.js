@@ -45,76 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-    // Mobile Menu Toggle
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
     
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    }
-
-    // Mobile Dropdown Toggle
-    const hasDropdown = document.querySelectorAll('.has-dropdown > a');
-    hasDropdown.forEach(item => {
-        item.addEventListener('click', function(e) {
-            if (window.innerWidth <= 992) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (navMenu && mobileToggle) {
-            if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
-                navMenu.classList.remove('active');
-                mobileToggle.classList.remove('active');
-            }
-        }
-    });
-
-    // Sticky Navbar
-    const navbar = document.getElementById('mainNavbar');
-    let lastScroll = 0;
-    
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 100) {
-            navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-        } else {
-            navbar.style.boxShadow = '0 4px 16px rgba(0,0,0,0.12)';
-        }
-        
-        lastScroll = currentScroll;
-    });
-
-    // Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            if (href !== '#' && href.length > 1) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const navbarHeight = navbar.offsetHeight;
-                    const targetPosition = target.offsetTop - navbarHeight;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    // Close mobile menu if open
-                    navMenu.classList.remove('active');
-                    mobileToggle.classList.remove('active');
-                }
-            }
-        });
-    });
-
     // Back to Top Button
     const backToTop = document.getElementById('backToTop');
     
