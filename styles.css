@@ -331,7 +331,9 @@ a {
      padding: 1.25rem 2.5rem; 
      font-size: 1.125rem; 
     }
-
+    .hero-swiper .swiper-pagination-bullet-active{
+        background-color: var(--accent-gold);
+    }
 /* About Snapshot */
 .about-snapshot {
      background: var(--off-white); 
