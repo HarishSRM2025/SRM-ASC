@@ -1,3 +1,4 @@
+
 const SC_DATA = [
   {
     id: "library",
@@ -323,8 +324,45 @@ const SC_DATA = [
   }
 ];
 
+let student_corner_stats= [
+    { value: 54, prefix:"",suffix: "K+", label: "Active Students" },
+    { value: 200,  prefix:"", suffix: "+", label: "Clubs & Societies"     },
+    { value: 50, prefix:"₹", suffix: "Cr+", label: "Scholarships Given"       },
+    { value: 95, prefix:"", suffix: "%",  label: "Placement Rate"      }
+  ]
+
+
+function research_renderStats() {
+  document.getElementById('research-hero-stats').innerHTML =
+    student_corner_stats.map(s => `
+      <div class="research-stat-card">
+      
+        <span class="research-stat-number" data-prefix="${s.prefix}" data-target="${s.value}" data-suffix="${s.suffix}">0</span>
+        <span class="research-stat-label">${s.label}</span>
+      </div>`).join('');
+}
+
+/* ─── COUNTER ANIMATION ─── */
+function research_runCounters() {
+  document.querySelectorAll('.research-stat-number[data-target]').forEach(el => {
+    const target = +el.dataset.target, suffix = el.dataset.suffix || '', prefix = el.dataset.prefix || '';
+    const step = target / (2000 / 16);
+    let cur = 0;
+    const t = setInterval(() => {
+      cur = Math.min(cur + step, target);
+      el.textContent = (cur >= target ? prefix : '')+ Math.floor(cur) + (cur >= target ? suffix : '');
+      if (cur >= target) clearInterval(t);
+    }, 16);
+  });}
+const research_statsIO = new IntersectionObserver(e => {
+  if (e[0].isIntersecting) { setTimeout(research_runCounters, 500); research_statsIO.disconnect(); }
+}, { threshold: 0.5 });
+const research_statsEl = document.getElementById('research-hero-stats');
+if (research_statsEl) research_statsIO.observe(research_statsEl);
+
 /* ─── RENDER CARDS ─── */
 function scRenderCards() {
+    research_renderStats()
   const grid = document.getElementById('student-grid');
   grid.innerHTML = SC_DATA.map(c => `
     <div class="student-card ${c.theme}">
@@ -339,21 +377,7 @@ function scRenderCards() {
         </div>
         <span class="student-card-badge">${c.badge}</span>
       </div>
-      <div class="student-card-list">
-        ${c.items.map(item => `
-          <a href="#" class="student-card-item" onclick="return false;">
-            <div class="student-card-item-icon">
-              <i class="${item.icon}"></i>
-            </div>
-            <div class="student-card-item-body">
-              <span class="student-card-item-label">${item.label}</span>
-              <span class="student-card-item-desc">${item.desc}</span>
-            </div>
-            <span class="student-card-item-tag" style="background:${item.tagBg};color:${item.tagColor}">${item.tag}</span>
-            <span class="student-card-item-arr"><i class="fa-solid fa-chevron-right"></i></span>
-          </a>
-        `).join('')}
-      </div>
+      
       <div class="student-card-footer">
         <button class="student-card-btn" onclick="scOpenModal('${c.id}')">
           ${c.btnLabel}
