@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research & Innovation | SRM University</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <link rel="stylesheet" href="assets/css/research.css"> 
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/components.css">
@@ -64,8 +65,7 @@
 <!-- PUBLICATIONS -->
 <section class="research-section-wrap research-bg-white" id="publications">
   <div class="research-inner">
-    <div class="research-pub-header research-reveal">
-      <div class="research-heading-block research-heading-left">
+    <div class="research-heading-block research-reveal">
         <div class="research-pill-badge">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
           Scholarly Output
@@ -73,9 +73,9 @@
         <h2 class="research-section-h2">Publications by <span>Faculty &amp; Students</span></h2>
         <p class="research-section-sub">Peer-reviewed contributions across leading journals, conferences, and academic presses — 2023–2024.</p>
         <div class="research-heading-divider"></div>
+        
       </div>
-      <div class="research-pub-filters" id="research-pub-filters"></div>
-    </div>
+       <div class="research-pub-filters" id="research-pub-filters"></div>
     <div class="research-pub-grid research-reveal" id="research-pub-grid"></div>
   </div>
 </section>
@@ -108,7 +108,8 @@
       <p class="research-section-sub">Strategic memoranda of understanding enabling collaborative research, internships, joint degree programs, and technology transfer.</p>
       <div class="research-heading-divider"></div>
     </div>
-    <div class="research-mou-tabs" id="research-mou-tabs"></div>
+    
+    <center><div class="research-mou-tabs" id="research-mou-tabs"></div></center>
     <div class="research-mou-grid research-reveal" id="research-mou-grid"></div>
   </div>
 </section>
@@ -133,12 +134,14 @@
     </div>
   </div>
 </div>
+    <footer class="main-footer" id="footer-container"></footer>
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
 
-<!-- ============================================================
-     ALL DATA AS JSON + RENDER ENGINE
-============================================================ -->
-<script>
-</script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/research.js" ></script>
+
 </body>
 </html>

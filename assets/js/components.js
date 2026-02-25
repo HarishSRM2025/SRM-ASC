@@ -90,7 +90,7 @@ const navbarHTML = `
                 </ul>
             </li>
             <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
-            <li><a href="#research">Research</a></li>
+            <li><a href="research.html">Research</a></li>
             <li><a href="#placements">Placements</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>

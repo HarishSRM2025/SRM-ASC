@@ -116,7 +116,7 @@
 
 /* ========== PUBLICATIONS ========== */
 .research-pub-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 44px; gap: 24px; flex-wrap: wrap; }
-.research-pub-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.research-pub-filters { display: flex; gap: 8px; flex-wrap: wrap;justify-content: center; margin-bottom: 5%; }
 .research-filter-btn {
   padding: 8px 18px; border-radius: 100px; border: 1px solid var(--light-gray);
   background: transparent; font-family: var(--font-body); font-size: 0.8rem; font-weight: 500; color: var(--dark-gray); cursor: pointer; transition: all var(--transition);
@@ -168,7 +168,7 @@
 .research-progress-label { display: flex; justify-content: space-between; font-size: 0.74rem; color: var(--gray); margin-bottom: 6px; }
 .research-progress-bar { height: 6px; background: var(--light-gray); border-radius: 10px; overflow: hidden; }
 .research-progress-fill { height: 100%; border-radius: 10px; background: var(--gradient-secondary); transition: width 1.6s ease; }
-.research-project-meta { display: flex; flex-wrap: wrap; gap: 18px; padding-top: 18px; border-top: 1px solid var(--light-gray); }
+.research-project-meta { display: flex; flex-wrap: wrap; gap: 18px; padding-top: 18px; }
 .research-meta-item { display: flex; flex-direction: column; gap: 2px; }
 .research-meta-lbl { font-size: 0.68rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
 .research-meta-val { font-size: 0.86rem; color: var(--dark-gray); font-weight: 600; }
