@@ -114,6 +114,14 @@ const collegeData = {
             title: "National Seminar on Innovation",
             description: "Discussion on innovation and entrepreneurship opportunities.",
             image: "assets/image/events/3.jpg"
+        },
+          {
+            day: "15",
+            month: "MAR",
+            category: "Cultural",
+            title: "ARIGLAM 2025 - Annual Cultural Fest",
+            description: "Three days of cultural events featuring music, dance and competitions.",
+            image: "assets/image/events/1.jpg"
         }
     ],
 
@@ -159,6 +167,29 @@ const collegeData = {
         { title: "Placements", link: "#placements" },
         { title: "Downloads", link: "#downloads" },
         { title: "Contact Us", link: "#contact" }
+    ],
+    // ... other data
+    campusLife: [
+        {
+            title: "Modern Infrastructure",
+            image: "assets/image/campus/1.JPG",
+            description: "Smart classrooms, advanced labs, digital library, and Wi-Fi enabled campus."
+        },
+        {
+            title: "Cultural & Technical Events",
+            image: "assets/image/campus/1.JPG",
+            description: "Annual fests, technical symposiums, and inter-college competitions."
+        },
+        {
+            title: "Sports & Clubs",
+            image: "assets/image/campus/1.JPG",
+            description: "Indoor & outdoor sports facilities with active student clubs and associations."
+        },
+        {
+            title: "Safe & Secure Environment",
+            image: "assets/image/campus/1.JPG",
+            description: "24/7 security, CCTV surveillance, and student-friendly campus policies."
+        }
     ]
 
 };

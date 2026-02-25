@@ -60,7 +60,7 @@ const navbarHTML = `
                 </ul>
             </li>
             <li class="has-dropdown">
-                <a href="#departments">Departments <i class="fas fa-chevron-down"></i></a>
+                <a href="academics.html">Academics <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="#commerce">B.Com / M.Com</a></li>
                     <li><a href="#bca">BCA</a></li>
@@ -88,6 +88,7 @@ const navbarHTML = `
                     <li><a href="#clubs">Clubs & Activities</a></li>
                 </ul>
             </li>
+            <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
             <li><a href="#research">Research</a></li>
             <li><a href="#placements">Placements</a></li>
             <li><a href="#contact">Contact</a></li>
