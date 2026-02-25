@@ -1,51 +1,6 @@
 // College Website JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Initialize Hero Swiper
-    const heroSwiper = new Swiper('.hero-swiper', {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true
-        },
-    });
-
-    // Initialize Testimonials Swiper
-    const testimonialsSwiper = new Swiper('.testimonials-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 6000,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-        },
-    });
-
-    
     // Back to Top Button
     const backToTop = document.getElementById('backToTop');
     

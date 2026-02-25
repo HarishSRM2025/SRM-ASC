@@ -148,7 +148,7 @@
     }
 .dropdown a {
      display: block; 
-     padding: 0.75rem 1.5rem; 
+     padding: 0.5rem 1.5rem; 
      color: var(--dark-gray); 
      transition: var(--transition); 
     }
@@ -258,7 +258,7 @@
     }
 .footer-bottom {
      background: var(--maroon-dark); 
-     padding: 1.5rem 0; 
+     padding: .5rem 0; 
     }
 .footer-bottom-content {
      display: flex; 

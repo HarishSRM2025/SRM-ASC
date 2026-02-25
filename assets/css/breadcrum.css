@@ -1,0 +1,88 @@
+
+/* Breadcrum-Hero Section */
+.breadcrum-hero {
+    position: relative;
+    height:60vh;
+    background-image: url('../image/breadcrum/common.JPG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.breadcrum-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.breadcrum-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:var(--dark-bg);
+}
+
+.breadcrum-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    color:white;
+}
+
+.breadcrum-hero h1 {
+    font-size: 3.5rem;
+    color: var(--white);
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #0000004d;
+}
+@media screen and (max-width:768px){
+    .breadcrum-hero h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.breadcrumb {
+    width: 80%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-gold);
+}
+
+.breadcrumb .separator {
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.breadcrumb>span.active{
+    font-weight:1000;
+}

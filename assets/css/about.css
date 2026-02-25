@@ -1,0 +1,226 @@
+
+
+/* --- 2. Overview & Vision/Mission --- */
+.overview-section { padding: 80px 0; }
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.sub-title {
+    color: var(--accent-gold);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.vm-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 5px solid var(--primary-maroon);
+}
+
+.vm-card:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #fff5f5;
+    color: var(--primary-maroon);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* --- 3. Counters Bar --- */
+.stats-counter-bar {
+    background: var(--primary-maroon);
+    padding: 60px 0;
+    color: white;
+}
+
+.stats-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-box { text-align: center; }
+.stat-box h3 { font-size: 3rem; color: var(--accent-gold); margin-bottom: 5px; }
+
+/* --- 4. Accreditation Grid --- */
+.accreditation-area { padding: 80px 0; background: #fdfdfd; }
+.acc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.acc-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    gap:0px;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #eee;
+    transition: var(--transition);
+}
+
+.acc-card:hover {
+    border-color: var(--accent-gold);
+    background: #fffcf5;
+    transform: translateY(-5px);
+}
+
+.acc-card img {
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius:100px;
+}
+
+/* --- 5. Organizational Chart Visual --- */
+.org-chart-wrapper {
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: var(--shadow-sm);
+    overflow-x: auto;
+}
+
+.chart-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600px;
+}
+
+.chart-node {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 5px 15px #00000014;
+}
+
+.level-1 { background: var(--primary-maroon); color: white; width: 250px; }
+.level-2 { background: var(--srm-navy); color: white; width: 280px; }
+.level-3 { background: #f8f9fa; border: 2px solid var(--accent-gold); color: var(--primary-maroon); width: 200px; }
+.level-4 { background: var(--accent-gold); color: white; width: 180px; }
+
+.chart-line {
+    width: 2px;
+    height: 30px;
+    background: #ddd;
+}
+
+/* --- 6. Leadership Section --- */
+.leadership-messages { padding: 80px 0; }
+
+.message-card.main-leader {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 50px;
+}
+
+.leader-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-content {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.message-content::after {
+    content: '\f10e';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 4rem;
+    color: rgba(0,0,0,0.03);
+}
+
+.secondary-leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.s-leader {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-gold);
+    box-shadow: var(--shadow-sm);
+}
+
+.s-leader h4 { color: var(--primary-maroon); margin-bottom: 5px; }
+.s-leader span { 
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 992px) {
+    .overview-grid, .message-card.main-leader {
+        grid-template-columns: 1fr;
+    }
+    .leader-img-box { height: 400px; }
+}
+
+@media (max-width: 768px) {
+    .section-title { font-size: 1.8rem; }
+    .stats-flex { flex-direction: column; }
+    .chart-visual { transform: scale(0.8); }
+}
+.s-leader {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.s-leader .leaderImg{
+    width:130px;
+    height:130px;
+    border-radius:150px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.s-leader img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}

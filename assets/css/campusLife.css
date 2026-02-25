@@ -1,0 +1,62 @@
+.campus-life-section {
+    padding: 90px 0;
+    background: #f9f9f9;
+}
+
+.campus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.campus-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.campus-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.campus-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background: linear-gradient(to top, #000000cc, transparent);
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.campus-overlay h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.campus-overlay p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.campus-card:hover img {
+    transform: scale(1.08);
+}
+
+.campus-card:nth-child(1) .campus-overlay {
+    background: linear-gradient(to top, #bd1d45e6, transparent);
+}
+.campus-card:nth-child(2) .campus-overlay {
+    background: linear-gradient(to top, #1f7a7de6, transparent); 
+}
+.campus-card:nth-child(3) .campus-overlay {
+    background: linear-gradient(to top, #e9ec27e6, transparent);
+}
+.campus-card:nth-child(4) .campus-overlay {
+    background: linear-gradient(to top, #3f0a63e6, transparent);
+}

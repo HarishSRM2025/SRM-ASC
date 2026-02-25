@@ -48,9 +48,9 @@ const navbarHTML = `
         </a>
         <!-- Navigation Menu -->
         <ul class="nav-menu" id="navMenu">
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li class="has-dropdown">
-                <a href="#about">About Us <i class="fas fa-chevron-down"></i></a>
+                <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="#about">About College</a></li>
                     <li><a href="#vision">Vision & Mission</a></li>
