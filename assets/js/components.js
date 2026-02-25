@@ -71,16 +71,17 @@ const navbarHTML = `
                 </ul>
             </li>
             <li class="has-dropdown">
-                <a href="#admissions">Admissions <i class="fas fa-chevron-down"></i></a>
+                <a href="admission.html">Admissions <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#apply">How to Apply</a></li>
-                    <li><a href="#eligibility">Eligibility Criteria</a></li>
-                    <li><a href="#fees">Fee Structure</a></li>
-                    <li><a href="#scholarships">Scholarships</a></li>
+                    <li><a href="admission.html#admission-process">Admission Process</a></li>
+                    <li><a href="admission.html#admission-eligibility">Eligibility Criteria</a></li>
+                    <li><a href="admission.html#admission-fees">Fee Structure</a></li>
+                    <li><a href="admission.html#admission-scholarships">Scholarships</a></li>
+                    <li><a href="admission.html#admission-apply">Online Application</a></li>
                 </ul>
             </li>
             <li class="has-dropdown">
-                <a href="#students">Students <i class="fas fa-chevron-down"></i></a>
+                <a href="student_corner.html">Students <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="#portal">Student Portal</a></li>
                     <li><a href="#results">Exam Results</a></li>
