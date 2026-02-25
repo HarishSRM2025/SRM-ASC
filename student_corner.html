@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Corner</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/student_corner.css">
+</head>
+<body>
+<div class="top-header" id="topbar-container"></div>
+    <div class="quick-links-bar" id="quicklink"></div>
+    <nav class="main-navbar" id="mainNavbar"></nav>
+<!-- HERO -->
+<section class="student-hero">
+  <div class="student-hero-grid"></div>
+  <div class="student-hero-glow"></div>
+  <div class="student-hero-content">
+    <div class="student-hero-pill">
+      <span class="student-hero-pill-dot"></span>
+      Academic Year 2024–25
+    </div>
+    <h1>Student <em>Corner</em></h1>
+    <p class="student-hero-desc">Your all-in-one academic hub — explore library resources, clubs, examination info, e-learning platforms, placement support, and scholarships.</p>
+    <div class="student-hero-stats">
+      <div class="student-hero-stat">
+        <span class="student-hero-stat-num">12,000+</span>
+        <span class="student-hero-stat-lbl">Students</span>
+      </div>
+      <div class="student-hero-stat">
+        <span class="student-hero-stat-num">50,000+</span>
+        <span class="student-hero-stat-lbl">Library Books</span>
+      </div>
+      <div class="student-hero-stat">
+        <span class="student-hero-stat-num">6</span>
+        <span class="student-hero-stat-lbl">Resource Hubs</span>
+      </div>
+      <div class="student-hero-stat">
+        <span class="student-hero-stat-num">95%</span>
+        <span class="student-hero-stat-lbl">Placement Rate</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- NOTICE -->
+<div class="student-notice-wrap">
+  <div class="student-notice">
+    <div class="student-notice-icon"><i class="fa-solid fa-bell"></i></div>
+    <span class="student-notice-badge">Notice</span>
+    <p class="student-notice-body">
+      <strong>End Semester Examinations</strong> are scheduled from <strong>March 10 – March 28, 2025.</strong>
+      Students must download their hall tickets before <strong>March 5</strong>. Report to exam hall 30 minutes early with valid ID.
+    </p>
+    <a href="#" class="student-notice-cta">View Details <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="student-main">
+  <div class="student-section-head">
+    <div class="student-section-head-pill">
+      <i class="fa-solid fa-user-graduate"></i> Student Resources
+    </div>
+    <h2>Explore Your <em>Corner</em></h2>
+    <p>Check all the resources available to you — from library access and examination schedules to clubs, e-learning, placements, and scholarships.</p>
+    <div class="student-section-head-rule"></div>
+  </div>
+
+  <div class="student-grid" id="student-grid"></div>
+
+  <!-- Quick Access -->
+  <div class="student-quick">
+    <div class="student-quick-text">
+      <h3>Need Quick Access?</h3>
+      <p>Jump to the academic calendar, submit a grievance, or browse the latest administrative circulars issued by the college.</p>
+    </div>
+    <div class="student-quick-btns">
+      <a href="#" class="student-quick-btn student-quick-btn--solid">
+        <i class="fa-solid fa-calendar-days"></i> Academic Calendar
+      </a>
+      <a href="#" class="student-quick-btn student-quick-btn--ghost">
+        <i class="fa-solid fa-comment-dots"></i> Student Grievance
+      </a>
+      <a href="#" class="student-quick-btn student-quick-btn--ghost">
+        <i class="fa-solid fa-file-lines"></i> Circulars & Notices
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- MODAL -->
+<div class="student-overlay" id="student-overlay" onclick="scCloseOutside(event)">
+  <div class="student-modal" id="student-modal">
+    <div class="student-modal-stripe" id="sc-m-stripe"></div>
+    <div class="student-modal-header">
+      <div class="student-modal-icon" id="sc-m-icon"></div>
+      <div class="student-modal-titles">
+        <h4 id="sc-m-title"></h4>
+        <p id="sc-m-sub"></p>
+      </div>
+      <button class="student-modal-close" onclick="scClose()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="student-modal-list" id="sc-m-list"></div>
+  </div>
+</div>
+    <footer class="main-footer" id="footer-container"></footer>
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+<script src="assets/js/student_corner.js"></script>
+    <!-- Back to Top -->
+
+<script src="assets/js/components.js"></script>
+<script src="assets/js/student_corner.js" ></script>
+</body>
+</html>
