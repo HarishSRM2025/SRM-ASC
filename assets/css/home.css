@@ -429,10 +429,7 @@
 }
 
 
-/* Leadership Preview */
-.leadership-preview {
-    background: var(--white);
-}
+
 
 .leadership-grid {
     display: grid;
@@ -537,4 +534,7 @@
 
 .event-item:hover {
     transform: translateY(-8px);
+}
+.newsSwiper .swiper-wrapper{
+    padding:0 20px;
 }

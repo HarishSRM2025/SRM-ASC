@@ -226,13 +226,6 @@ function renderNews() {
                     <div class="swiper-wrapper">
                         ${newsHTML}
                     </div>
-
-                    <!-- Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
                 </div>
 
             </div>
@@ -318,6 +311,36 @@ function renderQuickLinks() {
                 </div>
                 <div class="quick-links-grid">
                     ${linksHTML}
+                </div>
+            </div>
+        </section>
+    `;
+}
+function renderCampusLife() {
+    const container = document.getElementById("campus-life-section");
+    if (!container) return;
+
+    let campusHTML = collegeData.campusLife.map(item => `
+        <div class="campus-card">
+            <img src="${item.image}" alt="${item.title}">
+            <div class="campus-overlay">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+            </div>
+        </div>
+    `).join("");
+
+    container.innerHTML = `
+        <section class="section campus-life-section greenBg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Campus Life</span>
+                    <h2 class="section-title">Campus Life at SRM Trichy</h2>
+                    <p class="section-subtitle">A vibrant and dynamic campus environment that nurtures academic excellence, creativity, and leadership.</p>
+                </div>
+
+                <div class="campus-grid">
+                    ${campusHTML}
                 </div>
             </div>
         </section>

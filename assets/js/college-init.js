@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderNews();
     renderTestimonials();
     renderQuickLinks();
+    renderCampusLife();
     new Swiper('.testimonials-swiper', {
         slidesPerView: 1,
         spaceBetween: 30,
