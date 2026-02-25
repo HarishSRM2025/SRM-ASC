@@ -8,6 +8,123 @@
     gap: 50px;
     align-items: center;
 }
+/* --- 2. Overview & Vision/Mission --- */
+.overview-section { padding: 80px 0; }
+/* Layout Adjustment: Image Left, Content Right */
+.overview-grid.reverse-layout {
+    grid-template-columns: 0.9fr 1.1fr; /* Image slightly smaller than text area */
+}
+
+.overview-image-box .side-img {
+    width: 100%;
+    height:750px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+}
+/* First Row Layout */
+.overview-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+/* Image and 2x2 Grid container */
+.overview-visual-right {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.side-img-alt {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* 2x2 Mini Grid */
+.highlights-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.highlight-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.highlight-card:hover {
+    border-color: var(--primary-maroon);
+    transform: translateY(-5px);
+}
+
+.highlight-card h4 {
+    color: var(--primary-maroon);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.highlight-card p {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--text-gray);
+}
+
+/* Second Row: Detailed Text */
+.overview-detailed-row {
+    margin-top: 40px;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin-bottom: 40px;
+}
+
+.detailed-text-box h3 {
+    color: var(--primary-maroon);
+    margin-bottom: 20px;
+}
+
+.detailed-text-box p {
+    line-height: 1.8;
+    column-count: 1; /* You can change to 2 for a newspaper style */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .overview-main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Vision & Mission Separate Section */
+.vm-focus-section {
+    padding: 60px 0;
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.vm-card {
+    margin-bottom: 0; /* Override the margin from previous style */
+    height: 100%;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0px 0px 10px #e3e3e3;
+}
 
 .sub-title {
     color: var(--accent-gold);
@@ -16,20 +133,7 @@
     font-size: 0.9rem;
 }
 
-.vm-card {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    margin-bottom: 25px;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-    border-left: 5px solid var(--primary-maroon);
-}
 
-.vm-card:hover {
-    transform: translateX(10px);
-    box-shadow: var(--shadow-lg);
-}
 
 .icon-circle {
     width: 60px;
@@ -62,7 +166,9 @@
 .stat-box h3 { font-size: 3rem; color: var(--accent-gold); margin-bottom: 5px; }
 
 /* --- 4. Accreditation Grid --- */
-.accreditation-area { padding: 80px 0; background: #fdfdfd; }
+.accreditation-area { 
+    padding: 80px 0 
+}
 .acc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -173,7 +279,12 @@
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
 }
-
+.secondary-leaders-grid2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top:40px;
+}
 .s-leader {
     background: white;
     padding: 30px;
@@ -206,6 +317,25 @@
     .stats-flex { flex-direction: column; }
     .chart-visual { transform: scale(0.8); }
 }
+.s-leader {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.s-leader .leaderImg{
+    width:130px;
+    height:130px;
+    border-radius:150px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.s-leader img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
 .s-leader {
     display:flex;
     flex-direction:column;
