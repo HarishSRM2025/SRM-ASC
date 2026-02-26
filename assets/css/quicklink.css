@@ -1,53 +1,44 @@
-/* 1 – Elite Teal Emerald */
-.quick-link-card:nth-child(1){
-    background:
-    linear-gradient(135deg, #063e42d9, #17868bd9),
+/* --- ROW 1: THE FOUNDATION (Deep Teal & Royal Indigo) --- */
+.quick-link-card:nth-child(1) {
+    background: 
+    linear-gradient(135deg, #063e42e6, #17868bd9),
     url(../image/slider/1.jpg);
     background-size: cover;
-    background-position:top;
 }
 
-/* 2 – Imperial Violet */
-.quick-link-card:nth-child(2){
-    background:
-    linear-gradient(135deg, #310c478f, #310c47),
+.quick-link-card:nth-child(2) {
+    background: 
+    linear-gradient(135deg, #1a237ee6, #3f51b5d9),
     url(../image/slider/2.jpg);
     background-size: cover;
-    background-position:top;
 }
 
-/* 3 – Royal Navy Indigo */
-.quick-link-card:nth-child(3){
-    background:
-    linear-gradient(135deg, #081d688f, #081d68),
+/* --- ROW 2: THE PRESTIGE (Imperial Purple & Rich Crimson) --- */
+.quick-link-card:nth-child(3) {
+    background: 
+    linear-gradient(135deg, #310c47e6, #6a1b9ad9),
     url(../image/slider/3.jpg);
     background-size: cover;
-    background-position:top;
 }
 
-/* 4 – Prestige Olive Gold */
-.quick-link-card:nth-child(4){
-    background:
-    linear-gradient(135deg, #43b8fc8f, #43b8fc),
+.quick-link-card:nth-child(4) {
+    background: 
+    linear-gradient(135deg, #68010de6, #bd3c4bd9),
     url(../image/slider/1.jpg);
     background-size: cover;
-    background-position:top;
 }
 
-/* 5 – Luxe Bronze Amber */
-.quick-link-card:nth-child(5){
-    background:
-    linear-gradient(135deg, #c27a148f, #c27a14),
+/* --- ROW 3: THE HERITAGE (Sienna Amber & Midnight Slate) --- */
+.quick-link-card:nth-child(5) {
+    background: 
+    linear-gradient(135deg, #824a02e6, #c27a14d9),
     url(../image/slider/2.jpg);
     background-size: cover;
-    background-position:top;
 }
 
-/* 6 – Heritage Crimson */
-.quick-link-card:nth-child(6){
-    background:
-    linear-gradient(135deg, #c921348f, #68010d),
+.quick-link-card:nth-child(6) {
+    background: 
+    linear-gradient(135deg, #4c6775e6, #0270a3d9),
     url(../image/slider/3.jpg);
     background-size: cover;
-    background-position:top;
 }

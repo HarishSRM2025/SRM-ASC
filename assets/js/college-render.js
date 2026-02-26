@@ -331,7 +331,7 @@ function renderCampusLife() {
     `).join("");
 
     container.innerHTML = `
-        <section class="section campus-life-section greenBg">
+        
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag">Campus Life</span>
@@ -343,6 +343,6 @@ function renderCampusLife() {
                     ${campusHTML}
                 </div>
             </div>
-        </section>
+        
     `;
 }
