@@ -500,12 +500,12 @@ body {
 .org-node:hover {
     background: var(--gradient-primary);
     color: var(--white);
-    border-color: transparent;
+    ;
 }
 .org-node.highlight {
     background: var(--gradient-primary);
     color: var(--white);
-    border-color: transparent;
+    ;
     box-shadow: var(--shadow-sm);
 }
 .org-node small {
@@ -631,9 +631,11 @@ body {
 }
 .milestone-item {
     position: relative;
-    padding: 0 0 40px 32px;
+    padding: 20px 0 20px 32px;
+    margin-bottom:40px;
+    box-shadow:0px 0px 10px #e3e3e3;
 }
-.milestone-item:last-child { padding-bottom: 0; }
+.milestone-item:last-child { padding-bottom: 30px; }
 .milestone-dot {
     position: absolute;
     left: -48px;

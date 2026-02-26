@@ -100,7 +100,7 @@
   content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
   background: var(--gradient-primary); transform: scaleY(0); transform-origin: bottom; transition: transform var(--transition);
 }
-.research-policy-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.research-policy-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); ; }
 .research-policy-card:hover::after { transform: scaleY(1); }
 .research-policy-icon-wrap {
   width: 54px; height: 54px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center;

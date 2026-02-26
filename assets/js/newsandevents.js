@@ -104,17 +104,6 @@ const CONTACT_DATA = {
         title:"New Innovation & Entrepreneurship Hub Inaugurated on Campus",
         excerpt:"The 60,000 sq. ft. Innovation Hub was inaugurated by the Chancellor, featuring 40 startup incubation bays.",
         readColor:"var(--primary-maroon)", href:"#"
-      },
-      {
-        cat:"Achievement", catIcon:"fas fa-robot",
-        catBg:"rgba(212,165,116,.92)", catColor:"#1A1A1A",
-        coverBg:"linear-gradient(135deg,#5A1529 0%,#1B7B7D 100%)",
-        coverIcon:"fas fa-robot", coverLabel:"Achievement",
-        authorIcon:"fas fa-robot", authorBg:"linear-gradient(135deg,#5A1529,#1B7B7D)",
-        author:"Tech & Sports Club", date:"Oct 28, 2025",
-        title:"SRM Wins National Robotics Championship for 3rd Consecutive Year",
-        excerpt:"Team SRM Robotics clinched the National Robotics Championship gold for the third year running, beating 200+ teams.",
-        readColor:"var(--primary-maroon)", href:"#"
       }
     ]
   },

@@ -137,7 +137,7 @@
 .program-card.featured {
      background: var(--gradient-primary); 
      color: var(--white); 
-     border-color: transparent; 
+     ; 
     }
 .featured-tag {
      position: absolute; 
