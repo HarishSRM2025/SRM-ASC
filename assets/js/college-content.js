@@ -75,13 +75,13 @@ const collegeData = {
         {
             name: "Dr. R. Shivakumar",
             designation: "Chairman",
-            image: "assets/image/leaders/1.png",
+            image: "assets/image/leaders/chairman.png",
             message: "Committed to providing quality education and empowering students to achieve global standards."
         },
         {
             name: "Mr. S. Niranjan",
             designation: "Co-Chairman",
-            image: "assets/image/leaders/2.jpg",
+            image: "assets/image/leaders/vice chairman.jpg",
             message: "Dedicated to academic excellence, innovation, and holistic student development."
         }
     ],
