@@ -50,24 +50,25 @@ const navbarHTML = `
         <ul class="nav-menu" id="navMenu">
             <li><a href="index.html" class="active">Home</a></li>
             <li class="has-dropdown">
-                <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                <a href="about.html">About <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#about">About College</a></li>
-                    <li><a href="#vision">Vision & Mission</a></li>
-                    <li><a href="#management">Management</a></li>
-                    <li><a href="#principal">Principal's Message</a></li>
-                    <li><a href="#infrastructure">Infrastructure</a></li>
+                    <li><a href="about.html#about">About College</a></li>
+                    <li><a href="about.html#vision">Vision & Mission</a></li>
+                    <li><a href="about.html#accreditation">Accreditation</a></li>
+                    <li><a href="about.html#governance">Governance</a></li>
+                    <li><a href="about.html#leadership">Leadership</a></li>
+                    <li><a href="about.html#milestones">Milestones</a></li>
                 </ul>
             </li>
             <li class="has-dropdown">
                 <a href="academics.html">Academics <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#commerce">B.Com / M.Com</a></li>
-                    <li><a href="#bca">BCA</a></li>
-                    <li><a href="#bba">BBA</a></li>
-                    <li><a href="#bsc-ai">B.Sc AI & ML</a></li>
-                    <li><a href="#mba">MBA</a></li>
-                    <li><a href="#departments">All Departments</a></li>
+                    <li><a href="academics.html#departments">Departments</a></li>
+                    <li><a href="academics.html#programmes">Programmes Offered</a></li>
+                    <li><a href="academics.html#calendar">Calendar</a></li>
+                    <li><a href="academics.html#syllabus">Syllabus</a></li>
+                    <li><a href="academics.html#faculty">Faculty</a></li>
+                    <li><a href="academics.html#exam">Exam</a></li>
                 </ul>
             </li>
             <li class="has-dropdown">
@@ -83,16 +84,16 @@ const navbarHTML = `
             <li class="has-dropdown">
                 <a href="student_corner.html">Students <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#portal">Student Portal</a></li>
-                    <li><a href="#results">Exam Results</a></li>
-                    <li><a href="#library">Library</a></li>
-                    <li><a href="#clubs">Clubs & Activities</a></li>
+                    <li><a href="student_corner.html#portal">Student Portal</a></li>
+                    <li><a href="student_corner.html#results">Exam Results</a></li>
+                    <li><a href="student_corner.html#library">Library</a></li>
+                    <li><a href="student_corner.html#clubs">Clubs & Activities</a></li>
                 </ul>
             </li>
             <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="#placements">Placements</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="newsandevents.html">News & Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <!-- Mobile Toggle -->
         <button class="mobile-toggle" id="mobileToggle">
