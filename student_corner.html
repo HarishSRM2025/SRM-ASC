@@ -10,39 +10,142 @@
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="stylesheet" href="assets/css/student_corner.css">
 <link rel="stylesheet" href="assets/css/research.css">
+<link rel="fav icon" href="./assets/image/fav.png">
+<link rel="stylesheet" href="./assets/css/breadcrum.css">
 </head>
 <body>
 <div class="top-header" id="topbar-container"></div>
     <div class="quick-links-bar" id="quicklink"></div>
     <nav class="main-navbar" id="mainNavbar"></nav>
-<!-- HERO -->
+<!-- ── HERO ── -->
+<section class="admission-hero" id="admission-hero">
+  <div class="admission-hero-bg"></div>
+  <div class="admission-hero-grid"></div>
+  <div class="admission-hero-orb admission-hero-orb--1"></div>
+  <div class="admission-hero-orb admission-hero-orb--2"></div>
+  <div class="admission-hero-orb admission-hero-orb--3"></div>
 
-
-<section class="research-hero">
-  <div class="research-hero-bg"></div>
-  <div class="research-hero-grid"></div>
-  <div class="research-orb research-orb-1"></div>
-  <div class="research-orb research-orb-2"></div>
-  <div class="research-orb research-orb-3"></div>
-  <div class="research-hero-content">
-    <div>
-      <div class="research-hero-badge">
-        <i class="fas fa-graduation-cap"></i> Student Corner 2025–26
+  <div class="admission-hero-content">
+    
+    <div id="admissionHeroLeft">
+      
+      <div class="admission-hero-badge">
+        <i class="fas fa-users"></i> Student Corner
       </div>
-      <h1 class="research-hero-title">Everything You Need,<br><em>All in One Place</em></h1>
-      <p class="research-hero-desc">Your one-stop hub for library resources, clubs, exam schedules, e-learning, placements, and scholarships at SRM Institute of Science and Technology.</p>
-      <div class="research-hero-ctas">
-        <a href="#projects" class="research-btn-primary">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-         Student Portal
+
+      <h1 class="admission-hero-title">
+        Empowering Every<br>
+        Student for <em>Success</em><br>
+        & Growth
+      </h1>
+
+      <p class="admission-hero-desc">
+        Welcome to the Student Corner at SRM Trichy Arts and Science. 
+        Access essential academic resources, student services, examination updates, 
+        scholarships, and campus life information — all in one place designed 
+        to support your academic journey.
+      </p>
+
+      <div class="admission-hero-actions">
+        <a href="#student-portal" class="btn btn-primary">
+          <i class="fas fa-sign-in-alt"></i> Student Portal
         </a>
-       
+        <a href="#exam-updates" class="btn btn-outline">
+          <i class="fas fa-bullhorn"></i> Exam Updates
+        </a>
+      </div>
+
+      <div class="admission-hero-stats">
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">24/7</div>
+          <div class="admission-hero-stat-label">Online Access</div>
+        </div>
+
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">100+</div>
+          <div class="admission-hero-stat-label">Student Services</div>
+        </div>
+
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">50+</div>
+          <div class="admission-hero-stat-label">Clubs & Activities</div>
+        </div>
+
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">Career Ready</div>
+          <div class="admission-hero-stat-label">Placement Support</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="admissionHeroCard">
+      <div class="admission-hero-card">
+
+        <div class="admission-hero-card-title">
+          Student <span>Services</span>
+        </div>
+
+        <a href="#exam-schedule" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(125,31,59,0.15);color:#e07090;">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Exam Schedule</strong>
+            <span>Timetable & Notifications</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#results" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(27,123,125,0.15);color:#5cc8ca;">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Results</strong>
+            <span>Check Semester Results</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#student-handbook" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Student Handbook</strong>
+            <span>Rules & Guidelines</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#scholarships" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(45,134,89,0.15);color:#5ecc8c;">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Scholarships</strong>
+            <span>Financial Assistance</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#placements" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Placements</strong>
+            <span>Career Opportunities</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
       </div>
     </div>
-    <div class="research-hero-stats" id="research-hero-stats"></div>
+
   </div>
 </section>
-
 <!-- NOTICE -->
 <div class="student-notice-wrap">
   <div class="student-notice">
@@ -111,7 +214,6 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-<script src="assets/js/student_corner.js"></script>
     <!-- Back to Top -->
 
 <script src="assets/js/components.js"></script>

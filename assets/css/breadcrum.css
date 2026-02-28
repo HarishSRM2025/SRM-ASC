@@ -1,0 +1,203 @@
+ /* ── Admission HERO ── */
+        .admission-hero {
+          min-height: 100vh;
+          background: var(--srm-navy);
+          position: relative;
+          align-items: center;
+          overflow: hidden;
+         }
+         .admission-hero-bg {
+         position: absolute;
+          inset: 0;
+          background: var(--light-bg);
+          opacity: 0.88;
+         }
+         .admission-hero-grid {
+         position: absolute;
+          inset: 0;
+          background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+          background-size: 72px 72px;
+         }
+         .admission-hero-orb {
+         position: absolute;
+          border-radius: 50%;
+          filter: blur(80px);
+          pointer-events: none;
+         }
+         .admission-hero-orb--1 {
+         width: 500px;
+          height: 500px;
+          background: rgba(125,31,59,0.5);
+          top: -120px;
+          right: -100px;
+          animation: admission-float 8s ease-in-out infinite;
+         }
+         .admission-hero-orb--2 {
+         width: 350px;
+          height: 350px;
+          background: rgba(27,123,125,0.35);
+          bottom: -80px;
+          left: 15%;
+          animation: admission-float 11s ease-in-out infinite reverse;
+         }
+         .admission-hero-orb--3 {
+         width: 220px;
+          height: 220px;
+          background: rgba(212,165,116,0.22);
+          top: 40%;
+          left: 55%;
+          animation: admission-float 7s ease-in-out infinite;
+         }
+    @keyframes admission-float {
+         0%,100% {
+         transform: translateY(0) scale(1);
+         } 
+         50% {
+         transform: translateY(-24px) scale(1.04);
+         } 
+        }
+         .admission-hero-content {
+         position: relative;
+          z-index: 2;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 80px 48px;
+          display: grid;
+          grid-template-columns: 1fr 400px;
+          gap: 60px;
+          align-items: center;
+         }
+         .admission-hero-badge {
+         display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(212,165,116,0.14);
+          border: 1px solid rgba(212,165,116,0.4);
+          color: var(--accent-gold);
+          font-size: 0.74rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          padding: 6px 16px;
+          border-radius: 50px;
+          margin-bottom: 22px;
+         }
+         .admission-hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(26px, 4vw, 88px);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.05;
+            letter-spacing: -.02em;
+            margin-bottom: 20px;
+         }
+         .admission-hero-title em {
+         font-style: italic;
+          color: var(--accent-gold);
+         }
+         .admission-hero-desc {
+         font-size: 1rem;
+          color: rgba(255,255,255,0.7);
+          line-height: 1.75;
+          margin-bottom: 36px;
+          max-width: 520px;
+         }
+         .admission-hero-actions {
+         display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
+         }
+         .admission-hero-stats {
+         display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+          margin-top: 44px;
+         }
+         .admission-hero-stat {
+         background: rgba(255,255,255,0.06);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: var(--radius-md);
+          padding: 20px;
+          transition: background var(--transition);
+         }
+         .admission-hero-stat:hover {
+         background: rgba(255,255,255,0.1);
+         }
+         .admission-hero-stat-num {
+         font-family: var(--font-display);
+          font-size: 1.9rem;
+          font-weight: 700;
+          color: var(--accent-gold);
+          line-height: 1;
+         }
+         .admission-hero-stat-label {
+         font-size: 0.78rem;
+          color: rgba(255,255,255,0.55);
+          margin-top: 4px;
+          font-weight: 500;
+         }
+         .admission-hero-card {
+         background: rgba(255,255,255,0.06);
+          border: 1px solid rgba(212,165,116,0.22);
+          border-radius: var(--radius-lg);
+          padding: 32px;
+          backdrop-filter: blur(16px);
+          animation: admission-float 9s ease-in-out infinite;
+         }
+         .admission-hero-card-title {
+         font-family: var(--font-display);
+          font-size: 1.1rem;
+          color: var(--white);
+          margin-bottom: 20px;
+          font-weight: 600;
+         }
+         .admission-hero-card-title span {
+         color: var(--accent-gold);
+         }
+         .admission-quick-link {
+         display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 12px 14px;
+          border-radius: var(--radius-sm);
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.08);
+          margin-bottom: 8px;
+          text-decoration: none;
+          transition: all var(--transition);
+         }
+         .admission-quick-link:hover {
+         background: rgba(212,165,116,0.12);
+          border-color: rgba(212,165,116,0.3);
+          transform: translateX(4px);
+         }
+         .admission-quick-link-icon {
+         width: 36px;
+          height: 36px;
+          border-radius: var(--radius-sm);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.9rem;
+          flex-shrink: 0;
+         }
+         .admission-quick-link-text {
+         flex: 1;
+         }
+         .admission-quick-link-text strong {
+         display: block;
+          font-size: 0.85rem;
+          color: var(--white);
+          font-weight: 600;
+         }
+         .admission-quick-link-text span {
+         font-size: 0.73rem;
+          color: rgba(255,255,255,0.48);
+         }
+         .admission-quick-link-arrow {
+         color: rgba(255,255,255,0.28);
+          font-size: 0.72rem;
+         }
+         .admission-quick-link:hover .admission-quick-link-arrow {
+         color: var(--accent-gold);
+         }

@@ -10,31 +10,6 @@ const CONTACT_DATA = {
       { label:"Subscribe",   icon:"fas fa-bell",         href:"#", cta:true }
     ]
   },
-
-  hero: {
-    eyebrow: { icon:"fas fa-broadcast-tower", text:"News & Events 2025" },
-    titleHtml: "Stay Informed,<br><em>Stay Connected</em>",
-    desc: "Your complete source for SRM University news, upcoming events, and a vibrant gallery showcasing campus life, achievements, and milestones.",
-    buttons: [
-      { label:"Latest News",    href:"#contact-news",   icon:"fas fa-newspaper",    style:"primary" },
-      { label:"Event Calendar", href:"#contact-events", icon:"fas fa-calendar-alt", style:"outline" }
-    ],
-    stats: [
-      { num:"120+", label:"Events This Year",  icon:"fas fa-calendar-check",  iconBg:"rgba(212,165,116,.15)", iconColor:"var(--accent-gold)" },
-      { num:"45+",  label:"News Updates",      icon:"fas fa-newspaper",        iconBg:"rgba(27,123,125,.15)",  iconColor:"#5cc8ca" },
-      { num:"800+", label:"Gallery Photos",    icon:"fas fa-images",           iconBg:"rgba(45,134,89,.15)",   iconColor:"#5ecc8c" },
-      { num:"52K+", label:"Community Members", icon:"fas fa-users",            iconBg:"rgba(125,31,59,.15)",   iconColor:"#e07090" }
-    ],
-    tickerTitle: "Live <span>Updates</span>",
-    ticker: [
-      { icon:"fas fa-trophy",       iconBg:"rgba(212,165,116,.15)", iconColor:"var(--accent-gold)", text:"SRM ranks #1 in Tamil Nadu – NIRF 2025",    time:"2 hrs ago",  badge:"Achievement", badgeBg:"rgba(212,165,116,.15)", badgeColor:"var(--accent-gold)" },
-      { icon:"fas fa-laptop-code",  iconBg:"rgba(27,123,125,.15)",  iconColor:"#5cc8ca",            text:"Hackathon 2025 registration closes Nov 30",  time:"1 day ago",  badge:"Event",       badgeBg:"rgba(27,123,125,.15)",  badgeColor:"#5cc8ca" },
-      { icon:"fas fa-briefcase",    iconBg:"rgba(45,134,89,.15)",   iconColor:"#5ecc8c",            text:"Google campus drive confirmed – Dec 10",      time:"2 days ago", badge:"Placement",   badgeBg:"rgba(45,134,89,.15)",   badgeColor:"#5ecc8c" },
-      { icon:"fas fa-file-alt",     iconBg:"rgba(125,31,59,.15)",   iconColor:"#e07090",            text:"End-semester exam timetable now released",    time:"3 days ago", badge:"Exam",        badgeBg:"rgba(125,31,59,.15)",   badgeColor:"#e07090" },
-      { icon:"fas fa-music",        iconBg:"rgba(212,165,116,.15)", iconColor:"var(--accent-gold)", text:"Tarang 2026 cultural fest – Jan 18–20",       time:"5 days ago", badge:"Festival",    badgeBg:"rgba(212,165,116,.15)", badgeColor:"var(--accent-gold)" }
-    ]
-  },
-
   news: {
     tag:      { icon:"fas fa-newspaper", text:"News Updates" },
     title:    "Latest <span class='contact-accent'>News</span>",
@@ -210,44 +185,6 @@ function dummyCover(coverBg, coverIcon, coverLabel) {
     </div>`;
 }
 
-
-
-/* ═══════════════ HERO ═══════════════ */
-(function(){
-  const h = CONTACT_DATA.hero;
-  document.getElementById('contactHeroLeft').innerHTML = `
-    <div class="contact-hero-eyebrow"><i class="${h.eyebrow.icon}"></i> ${h.eyebrow.text}</div>
-    <h1 class="contact-hero-title">${h.titleHtml}</h1>
-    <p class="contact-hero-desc">${h.desc}</p>
-    <div class="contact-hero-actions">
-      ${h.buttons.map(b=>`<a href="${b.href}" class="contact-btn contact-btn--${b.style}"><i class="${b.icon}"></i>${b.label}</a>`).join('')}
-    </div>
-    <div class="contact-hero-stats">
-      ${h.stats.map(s=>`
-        <div class="contact-hero-stat">
-          <div class="contact-hero-stat-icon" style="background:${s.iconBg};color:${s.iconColor};"><i class="${s.icon}"></i></div>
-          <div><div class="contact-hero-stat-num">${s.num}</div><div class="contact-hero-stat-label">${s.label}</div></div>
-        </div>`).join('')}
-    </div>`;
-
-  document.getElementById('contactHeroRight').innerHTML = `
-    <div class="contact-ticker-panel">
-      <div class="contact-ticker-head">
-        <i class="fas fa-rss" style="color:var(--accent-gold);font-size:.82rem;"></i>
-        <div class="contact-ticker-head-title">${h.tickerTitle}</div>
-        <div class="contact-ticker-live"><div class="contact-ticker-live-dot"></div>LIVE</div>
-      </div>
-      ${h.ticker.map(t=>`
-        <a class="contact-ticker-row" href="#">
-          <div class="contact-ticker-icon-box" style="background:${t.iconBg};color:${t.iconColor};"><i class="${t.icon}"></i></div>
-          <div class="contact-ticker-info">
-            <strong>${t.text}</strong>
-            <span><i class="fas fa-clock"></i>${t.time}</span>
-          </div>
-          <span class="contact-ticker-badge" style="background:${t.badgeBg};color:${t.badgeColor};">${t.badge}</span>
-        </a>`).join('')}
-    </div>`;
-})();
 
 /* ═══════════════ NEWS ═══════════════ */
 (function(){

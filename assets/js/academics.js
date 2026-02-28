@@ -1,12 +1,5 @@
 const DATA = {
-    hero: {
-        stats: [
-            { num: "18+", label: "Departments" },
-            { num: "200+", label: "Programmes" },
-            { num: "850+", label: "Faculty Members" },
-            { num: "40k+", label: "Students" }
-        ]
-    },
+    
     nav: [
         { label: "Departments", href: "#departments", icon: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>' },
         { label: "Programmes Offered", href: "#programmes", icon: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>' },
@@ -217,13 +210,7 @@ const DATA = {
     }
 };
 
-// ════════════════════════════════════════════
-//  RENDER FUNCTIONS
-// ════════════════════════════════════════════
-function renderHeroStats(){
-    document.getElementById('hero-stats').innerHTML =
-        DATA.hero.stats.map(s=>`<div class="hero-stat"><div class="hero-stat-num">${s.num}</div><div class="hero-stat-label">${s.label}</div></div>`).join('');
-}
+
 
 function renderDepts(){
     document.getElementById('dept-subtitle').textContent = DATA.departments.subtitle;
@@ -395,7 +382,6 @@ function initActiveNav(){
 }
 
 // ─── INIT ───
-renderHeroStats();
 renderDepts();
 renderProgrammes();
 renderCalendar();
