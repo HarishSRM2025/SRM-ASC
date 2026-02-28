@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumni Success Stories – Student Corner | SRM IST</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/research.css">
+<link rel="stylesheet" href="assets/css/addmission.css">
+<link rel="stylesheet" href="assets/css/alumini.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<div class="top-header" id="topbar-container"></div>
+    <div class="quick-links-bar" id="quicklink"></div>
+    <nav class="main-navbar" id="mainNavbar"></nav>
+<!-- ════════════════ HERO BANNER ════════════════ -->
+<section class="research-hero">
+  <div class="research-hero-bg"></div>
+  <div class="research-hero-grid"></div>
+  <div class="research-orb research-orb-1"></div>
+  <div class="research-orb research-orb-2"></div>
+  <div class="research-orb research-orb-3"></div>
+  <div class="research-hero-content">
+    <div>
+      <div class="research-hero-badge">
+        <i class="fas fa-graduation-cap"></i> Student Corner 2025–26
+      </div>
+      <h1 class="research-hero-title">Everything You Need,<br><em>All in One Place</em></h1>
+      <p class="research-hero-desc">Your one-stop hub for library resources, clubs, exam schedules, e-learning, placements, and scholarships at SRM Institute of Science and Technology.</p>
+      <div class="research-hero-ctas">
+        <a href="#projects" class="research-btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+         Alumini Portal
+        </a>
+       
+      </div>
+    </div>
+      <div class="admission-hero-card">
+      <div class="admission-hero-card-title">Quick <span>Navigation</span></div>
+        <a href="#admission-scholarships" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;"><i class="fas fa-medal"></i></div>
+          <div class="admission-quick-link-text"><strong>Featured Achievers</strong><span>Fee concession details</span></div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+        <a href="#admission-process" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(125,31,59,0.15);color:#e07090;"><i class="fas fa-list-ol"></i></div>
+          <div class="admission-quick-link-text"><strong>Admission Process</strong><span>Step-by-step guide</span></div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+        <a href="#admission-eligibility" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(27,123,125,0.15);color:#5cc8ca;"><i class="fas fa-user-check"></i></div>
+          <div class="admission-quick-link-text"><strong>Eligibility Criteria</strong><span>UG, PG &amp; PhD</span></div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+        <a href="#admission-fees" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;"><i class="fas fa-rupee-sign"></i></div>
+          <div class="admission-quick-link-text"><strong>Fee Structure</strong><span>Annual fee details</span></div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+        <a href="#admission-documents" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(45,134,89,0.15);color:#5ecc8c;"><i class="fas fa-folder-open"></i></div>
+          <div class="admission-quick-link-text"><strong>Documents Required</strong><span>Checklist &amp; download</span></div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+        
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ STICKY FILTERS ════════════════ -->
+<section class="alumni-filters-section">
+  <div class="alumni-filters-inner">
+    <div class="alumni-search-wrap">
+      <i class="fas fa-search"></i>
+      <input type="text" class="alumni-search-input" id="alumni-search-box"
+        placeholder="Search by name, company or role…" oninput="alumniFilterCards()">
+    </div>
+    <div class="alumni-filter-group">
+      <button class="alumni-filter-btn active" data-filter="all" onclick="alumniSetFilter(this,'all')">All</button>
+      <button class="alumni-filter-btn" data-filter="technology" onclick="alumniSetFilter(this,'technology')"><i class="fas fa-microchip"></i> Technology</button>
+      <button class="alumni-filter-btn" data-filter="finance" onclick="alumniSetFilter(this,'finance')"><i class="fas fa-chart-line"></i> Finance</button>
+      <button class="alumni-filter-btn" data-filter="healthcare" onclick="alumniSetFilter(this,'healthcare')"><i class="fas fa-heartbeat"></i> Healthcare</button>
+      <button class="alumni-filter-btn" data-filter="entrepreneurship" onclick="alumniSetFilter(this,'entrepreneurship')"><i class="fas fa-rocket"></i> Entrepreneur</button>
+      <button class="alumni-filter-btn" data-filter="academia" onclick="alumniSetFilter(this,'academia')"><i class="fas fa-flask"></i> Academia</button>
+    </div>
+    <select class="alumni-filter-select" id="alumni-batch-filter" onchange="alumniFilterCards()">
+      <option value="all">All Batches</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+    </select>
+  </div>
+</section>
+
+<!-- ════════════════ FEATURED ACHIEVERS ════════════════ -->
+<section class="alumni-featured-section" id="featured">
+  <div class="alumni-section-header">
+    <h2 class="alumni-section-title">Featured <span>Achievers</span></h2>
+    <a href="#alumni-stories" class="alumni-view-all">View All Stories <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="alumni-featured-grid" id="alumni-featured-grid"></div>
+</section>
+
+<!-- ════════════════ QUOTE BAND ════════════════ -->
+<div class="alumni-quote-band">
+  <p class="alumni-quote-band-text">
+    "The education I received here didn't just teach me to code — it taught me to think, to lead, and to build things that matter for millions of people."
+  </p>
+  <p class="alumni-quote-band-author">Priya Venkataraman <span>· VP Engineering, Google India · Batch of 2016</span></p>
+</div>
+
+<!-- ════════════════ DOMAIN HIGHLIGHTS ════════════════ -->
+<section class="alumni-domains-section">
+  <div class="alumni-section-header">
+    <h2 class="alumni-section-title">Alumni by <span>Domain</span></h2>
+  </div>
+  <div class="alumni-domains-grid" id="alumni-domains-grid"></div>
+</section>
+
+<!-- ════════════════ ALL STORIES ════════════════ -->
+<section class="alumni-stories-section" id="alumni-stories">
+  <div class="alumni-section-header">
+    <h2 class="alumni-section-title">All <span>Stories</span></h2>
+    <span id="alumni-results-count" style="font-size:13px;color:var(--gray)"></span>
+  </div>
+  <div class="alumni-stories-grid" id="alumni-stories-grid"></div>
+<div class="alumni-pagination" id="alumni-pagination"></div>
+
+</section>
+
+<!-- PAGINATION -->
+
+
+
+<!-- ════════════════ MODAL ════════════════ -->
+<div class="alumni-modal-overlay" id="alumni-modal-overlay" onclick="alumniCloseModal(event)">
+  <div class="alumni-modal" id="alumni-modal"></div>
+</div>
+
+    <footer class="main-footer" id="footer-container"></footer>    
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+<!-- ════════════════ SCRIPTS + DATA ════════════════ -->
+ <script src="./assets/js/components.js"></script>
+
+<script src="assets/js/alumini.js"></script>
+</body>
+</html>
