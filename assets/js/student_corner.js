@@ -332,15 +332,6 @@ let student_corner_stats= [
   ]
 
 
-function research_renderStats() {
-  document.getElementById('research-hero-stats').innerHTML =
-    student_corner_stats.map(s => `
-      <div class="research-stat-card">
-      
-        <span class="research-stat-number" data-prefix="${s.prefix}" data-target="${s.value}" data-suffix="${s.suffix}">0</span>
-        <span class="research-stat-label">${s.label}</span>
-      </div>`).join('');
-}
 
 /* ─── COUNTER ANIMATION ─── */
 function research_runCounters() {
@@ -362,7 +353,6 @@ if (research_statsEl) research_statsIO.observe(research_statsEl);
 
 /* ─── RENDER CARDS ─── */
 function scRenderCards() {
-    research_renderStats()
   const grid = document.getElementById('student-grid');
   grid.innerHTML = SC_DATA.map(c => `
     <div class="student-card ${c.theme}">

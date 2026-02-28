@@ -7,8 +7,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="assets/css/components.css">
-<link rel="stylesheet" href="assets/css/newsandevents.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/newsandevents.css">
+  <link rel="fav icon" href="./assets/image/fav.png">
+<link rel="stylesheet" href="./assets/css/breadcrum.css">
 </head>
 <body>
 
@@ -16,18 +18,135 @@
     <div class="quick-links-bar" id="quicklink"></div>
     <nav class="main-navbar" id="mainNavbar"></nav>
 
-<section class="contact-hero" id="contact-hero">
-  <div class="contact-hero-bg"></div>
-  <div class="contact-hero-grid"></div>
-  <div class="contact-hero-orb contact-hero-orb--1"></div>
-  <div class="contact-hero-orb contact-hero-orb--2"></div>
-  <div class="contact-hero-orb contact-hero-orb--3"></div>
-  <div class="contact-hero-content">
-    <div id="contactHeroLeft"></div>
-    <div id="contactHeroRight"></div>
+<!-- ── HERO ── -->
+<section class="admission-hero" id="admission-hero">
+  <div class="admission-hero-bg"></div>
+  <div class="admission-hero-grid"></div>
+  <div class="admission-hero-orb admission-hero-orb--1"></div>
+  <div class="admission-hero-orb admission-hero-orb--2"></div>
+  <div class="admission-hero-orb admission-hero-orb--3"></div>
+
+  <div class="admission-hero-content">
+    
+    <div id="admissionHeroLeft">
+      
+      <div class="admission-hero-badge">
+        <i class="fas fa-newspaper"></i> News & Events
+      </div>
+
+      <h1 class="admission-hero-title">
+        Stay Updated with<br>
+        Campus <em>News</em><br>
+        & Happenings
+      </h1>
+
+      <p class="admission-hero-desc">
+        Discover the latest news, announcements, academic achievements, 
+        cultural celebrations, seminars, workshops, and major events at 
+        SRM Trichy Arts and Science. Stay connected with everything 
+        happening across our vibrant campus.
+      </p>
+
+      <div class="admission-hero-actions">
+        <a href="#latest-news" class="btn btn-primary">
+          <i class="fas fa-bullhorn"></i> Latest News
+        </a>
+        <a href="#upcoming-events" class="btn btn-outline">
+          <i class="fas fa-calendar-check"></i> Upcoming Events
+        </a>
+      </div>
+
+      <div class="admission-hero-stats">
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">100+</div>
+          <div class="admission-hero-stat-label">Annual Events</div>
+        </div>
+
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">50+</div>
+          <div class="admission-hero-stat-label">Workshops & Seminars</div>
+        </div>
+
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">25+</div>
+          <div class="admission-hero-stat-label">Cultural Programs</div>
+        </div>
+
+        <div class="admission-hero-stat">
+          <div class="admission-hero-stat-num">Campus Wide</div>
+          <div class="admission-hero-stat-label">Student Participation</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="admissionHeroCard">
+      <div class="admission-hero-card">
+
+        <div class="admission-hero-card-title">
+          Explore <span>Updates</span>
+        </div>
+
+        <a href="#latest-news" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(125,31,59,0.15);color:#e07090;">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Latest News</strong>
+            <span>Announcements & Achievements</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#upcoming-events" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(27,123,125,0.15);color:#5cc8ca;">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Upcoming Events</strong>
+            <span>Mark Your Calendar</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#event-gallery" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+            <i class="fas fa-images"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Event Gallery</strong>
+            <span>Photos & Highlights</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#press-releases" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(45,134,89,0.15);color:#5ecc8c;">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Press Releases</strong>
+            <span>Official Statements</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+        <a href="#newsletter" class="admission-quick-link">
+          <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <div class="admission-quick-link-text">
+            <strong>Newsletter</strong>
+            <span>Monthly Campus Updates</span>
+          </div>
+          <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+
   </div>
 </section>
-
 <section class="contact-news-wrap" id="contact-news">
   <div class="contact-section" id="contactNewsSection"></div>
 </section>

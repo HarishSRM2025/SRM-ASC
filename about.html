@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us – College</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="./assets/css/about.css">
-<link rel="stylesheet" href="./assets/css/components.css">
-<link rel="stylesheet" href="./assets/css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us – College</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="fav icon" href="./assets/image/fav.png">
+<link rel="stylesheet" href="./assets/css/breadcrum.css">
 </head>
 <body>
 
@@ -20,15 +21,128 @@
     <div class="quick-links-bar" id="quicklink"></div>
     <nav class="main-navbar" id="mainNavbar"></nav>
 
-<!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-pattern"></div>
-        
-            <div class="hero-content">
-                <div class="hero-eyebrow"><span></span>Established 1985</div>
-                <h1>About Our Institution</h1>
-                <p>A legacy of academic excellence, innovative research, and holistic development—shaping leaders for a better tomorrow since our founding.</p>
+    <!-- ── HERO ── -->
+    <section class="admission-hero" id="about-hero">
+        <div class="admission-hero-bg"></div>
+        <div class="admission-hero-grid"></div>
+        <div class="admission-hero-orb admission-hero-orb--1"></div>
+        <div class="admission-hero-orb admission-hero-orb--2"></div>
+        <div class="admission-hero-orb admission-hero-orb--3"></div>
+        <div class="admission-hero-content">
+            
+            <div id="admissionHeroLeft">
+                
+                <div class="admission-hero-badge">
+                    <i class="fas fa-university"></i> About SRM Trichy Arts & Science
+                </div>
+
+                <h1 class="admission-hero-title">
+                    Shaping Futures<br>
+                    Through <em>Excellence</em><br>
+                    In Education
+                </h1>
+
+                <p class="admission-hero-desc">
+                    SRM Trichy Arts and Science is dedicated to academic excellence, innovation, and holistic development. 
+                    We nurture young minds with quality education, modern infrastructure, experienced faculty, 
+                    and a vibrant campus culture that empowers students to lead and succeed globally.
+                </p>
+
+                <div class="admission-hero-actions">
+                    <a href="#vision-mission" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Our Vision & Mission
+                    </a>
+                    <a href="#about-history" class="btn btn-outline">
+                        <i class="fas fa-history"></i> Our Journey
+                    </a>
+                </div>
+
+                <div class="admission-hero-stats">
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">25+ Years</div>
+                        <div class="admission-hero-stat-label">Academic Legacy</div>
+                    </div>
+
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">10K+</div>
+                        <div class="admission-hero-stat-label">Successful Alumni</div>
+                    </div>
+
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">NAAC A++</div>
+                        <div class="admission-hero-stat-label">Accredited Institution</div>
+                    </div>
+
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">100+</div>
+                        <div class="admission-hero-stat-label">Expert Faculty Members</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="admissionHeroCard">
+                <div class="admission-hero-card">
+                    
+                    <div class="admission-hero-card-title">
+                        Discover <span>More</span>
+                    </div>
+
+                    <a href="#about-overview" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(125,31,59,0.15);color:#e07090;">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Institution Overview</strong>
+                            <span>Who we are & what we stand for</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#vision-mission" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(27,123,125,0.15);color:#5cc8ca;">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Vision & Mission</strong>
+                            <span>Our guiding principles</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#leadership" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Leadership Team</strong>
+                            <span>Meet our visionaries</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#infrastructure" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(45,134,89,0.15);color:#5ecc8c;">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Campus & Infrastructure</strong>
+                            <span>World-class facilities</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#achievements" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Achievements</strong>
+                            <span>Milestones & recognitions</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                </div>
             </div>
         </div>
     </section>

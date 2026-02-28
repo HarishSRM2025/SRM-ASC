@@ -10,35 +10,141 @@
 <link rel="stylesheet" href="./assets/css/infrastructure.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<link rel="fav icon" href="./assets/image/fav.png">
+<link rel="stylesheet" href="./assets/css/breadcrum.css">
 </head>
 <body>
 <div class="top-header" id="topbar-container"></div>
     <div class="quick-links-bar" id="quicklink"></div>
     <nav class="main-navbar" id="mainNavbar"></nav>
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-orb hero-orb-1"></div>
-        <div class="hero-orb hero-orb-2"></div>
-        <div class="hero-orb hero-orb-3"></div>
-        <div class="hero-inner">
-            <div class="hero-eyebrow">
-            <span class="hero-eyebrow-dot"></span>
-            Campus Infrastructure
-            </div>
-            <h1 class="hero-title">World-Class <span class="line-accent">Facilities</span></h1>
-            <p class="hero-subtitle">SRM University is equipped with state-of-the-art infrastructure that empowers students to learn, innovate, and thrive in a dynamic academic environment.</p>
-            <div class="hero-stats">
-            <div class="stat"><div class="stat-number">1200+</div><div class="stat-label">Acres Campus</div></div>
-            <div class="stat"><div class="stat-number">50+</div><div class="stat-label">Laboratories</div></div>
-            <div class="stat"><div class="stat-number">10K+</div><div class="stat-label">Hostel Capacity</div></div>
-            <div class="stat"><div class="stat-number">500+</div><div class="stat-label">Smart Classrooms</div></div>
-            </div>
-        </div>
-        <div class="hero-scroll-hint"><span>Explore</span><div class="scroll-line"></div></div>
-    </section>
+        <section class="admission-hero" id="admission-hero">
+        <div class="admission-hero-bg"></div>
+        <div class="admission-hero-grid"></div>
+        <div class="admission-hero-orb admission-hero-orb--1"></div>
+        <div class="admission-hero-orb admission-hero-orb--2"></div>
+        <div class="admission-hero-orb admission-hero-orb--3"></div>
 
+        <div class="admission-hero-content">
+            
+            <div id="admissionHeroLeft">
+            
+            <div class="admission-hero-badge">
+                <i class="fas fa-building"></i> Campus Infrastructure
+            </div>
+
+            <h1 class="admission-hero-title">
+                World-Class<br>
+                Learning <em>Infrastructure</em><br>
+                & Facilities
+            </h1>
+
+            <p class="admission-hero-desc">
+                Explore the modern infrastructure of SRM Trichy Arts and Science, 
+                featuring smart classrooms, advanced laboratories, digital libraries, 
+                research centers, sports complexes, and student-friendly campus spaces 
+                designed to foster academic excellence and holistic development.
+            </p>
+
+            <div class="admission-hero-actions">
+                <a href="#campus-tour" class="btn btn-primary">
+                <i class="fas fa-video"></i> Virtual Campus Tour
+                </a>
+                <a href="#facilities" class="btn btn-outline">
+                <i class="fas fa-th-large"></i> Explore Facilities
+                </a>
+            </div>
+
+            <div class="admission-hero-stats">
+                <div class="admission-hero-stat">
+                <div class="admission-hero-stat-num">50+ Acres</div>
+                <div class="admission-hero-stat-label">Green Campus</div>
+                </div>
+
+                <div class="admission-hero-stat">
+                <div class="admission-hero-stat-num">100+</div>
+                <div class="admission-hero-stat-label">Smart Classrooms</div>
+                </div>
+
+                <div class="admission-hero-stat">
+                <div class="admission-hero-stat-num">25+</div>
+                <div class="admission-hero-stat-label">Advanced Laboratories</div>
+                </div>
+
+                <div class="admission-hero-stat">
+                <div class="admission-hero-stat-num">Wi-Fi Enabled</div>
+                <div class="admission-hero-stat-label">Entire Campus</div>
+                </div>
+            </div>
+
+            </div>
+
+            <div id="admissionHeroCard">
+            <div class="admission-hero-card">
+
+                <div class="admission-hero-card-title">
+                Campus <span>Highlights</span>
+                </div>
+
+                <a href="#classrooms" class="admission-quick-link">
+                <div class="admission-quick-link-icon" style="background:rgba(125,31,59,0.15);color:#e07090;">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="admission-quick-link-text">
+                    <strong>Smart Classrooms</strong>
+                    <span>Technology-Enabled Learning</span>
+                </div>
+                <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                </a>
+
+                <a href="#laboratories" class="admission-quick-link">
+                <div class="admission-quick-link-icon" style="background:rgba(27,123,125,0.15);color:#5cc8ca;">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="admission-quick-link-text">
+                    <strong>Laboratories</strong>
+                    <span>Advanced Practical Facilities</span>
+                </div>
+                <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                </a>
+
+                <a href="#library" class="admission-quick-link">
+                <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="admission-quick-link-text">
+                    <strong>Digital Library</strong>
+                    <span>Extensive Learning Resources</span>
+                </div>
+                <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                </a>
+
+                <a href="#sports" class="admission-quick-link">
+                <div class="admission-quick-link-icon" style="background:rgba(45,134,89,0.15);color:#5ecc8c;">
+                    <i class="fas fa-football-ball"></i>
+                </div>
+                <div class="admission-quick-link-text">
+                    <strong>Sports Complex</strong>
+                    <span>Indoor & Outdoor Facilities</span>
+                </div>
+                <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                </a>
+
+                <a href="#hostel" class="admission-quick-link">
+                <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+                    <i class="fas fa-bed"></i>
+                </div>
+                <div class="admission-quick-link-text">
+                    <strong>Hostel & Amenities</strong>
+                    <span>Comfortable Student Living</span>
+                </div>
+                <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                </a>
+
+            </div>
+            </div>
+
+        </div>
+        </section>
 
         <!-- ══ 01 LIBRARY ══ -->
         <section class="infra-section" id="library">

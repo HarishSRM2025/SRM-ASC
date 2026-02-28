@@ -330,7 +330,7 @@ function admissionSectionHeader(tag, title, subtitle) {
     <h1 class="admission-hero-title">${h.titleHtml}</h1>
     <p class="admission-hero-desc">${h.description}</p>
     <div class="admission-hero-actions">
-      ${h.buttons.map(b => `<a href="${b.href}" class="admission-btn admission-btn--${b.style}"><i class="${b.icon}"></i> ${b.label}</a>`).join('')}
+      ${h.buttons.map(b => `<a href="${b.href}" class="btn btn-${b.style}"><i class="${b.icon}"></i> ${b.label}</a>`).join('')}
     </div>
     <div class="admission-hero-stats">
       ${h.stats.map(s => `<div class="admission-hero-stat"><div class="admission-hero-stat-num">${s.num}</div><div class="admission-hero-stat-label">${s.label}</div></div>`).join('')}

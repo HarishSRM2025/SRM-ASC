@@ -1,34 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Academics | SRM University</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./assets/css/styles.css">
-<link rel="stylesheet" href="./assets/css/components.css">
-<link rel="stylesheet" href="./assets/css/academics.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Academics | SRM University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/academics.css">
+    <link rel="fav icon" href="./assets/image/fav.png">
+<link rel="stylesheet" href="./assets/css/breadcrum.css">
 </head>
 <body>
     <div class="top-header" id="topbar-container"></div>
     <div class="quick-links-bar" id="quicklink"></div>
     <nav class="main-navbar" id="mainNavbar"></nav>
     <!-- HERO -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-grid-pattern"></div>
-        <div class="hero-orb hero-orb-1"></div>
-        <div class="hero-orb hero-orb-2"></div>
-        <div class="hero-content">
-            <div class="hero-eyebrow">
-                <div class="hero-eyebrow-dot"></div>
-                <span>SRM University · Academic Excellence</span>
+    <!-- ── HERO ── -->
+    <section class="admission-hero" id="academics-hero">
+        <div class="admission-hero-bg"></div>
+        <div class="admission-hero-grid"></div>
+        <div class="admission-hero-orb admission-hero-orb--1"></div>
+        <div class="admission-hero-orb admission-hero-orb--2"></div>
+        <div class="admission-hero-orb admission-hero-orb--3"></div>
+
+        <div class="admission-hero-content">
+
+            <!-- LEFT CONTENT -->
+            <div id="admissionHeroLeft">
+
+                <div class="admission-hero-badge">
+                    <i class="fas fa-graduation-cap"></i> Academic Excellence
+                </div>
+
+                <h1 class="admission-hero-title">
+                    Explore Our<br>
+                    Diverse <em>Academic</em><br>
+                    Programmes
+                </h1>
+
+                <p class="admission-hero-desc">
+                    SRM Trichy Arts and Science offers a wide spectrum of Undergraduate, 
+                    Postgraduate, and Research programmes designed to equip students with 
+                    industry-relevant knowledge, critical thinking skills, and global exposure.
+                </p>
+
+                <div class="admission-hero-actions">
+                    <a href="#ug-programmes" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> View Programmes
+                    </a>
+                    <a href="#academic-calendar" class="btn btn-outline">
+                        <i class="fas fa-calendar-alt"></i> Academic Calendar
+                    </a>
+                </div>
+
+                <!-- STATS -->
+                <div class="admission-hero-stats">
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">200+</div>
+                        <div class="admission-hero-stat-label">Programmes Offered</div>
+                    </div>
+
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">15+</div>
+                        <div class="admission-hero-stat-label">Departments</div>
+                    </div>
+
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">100+</div>
+                        <div class="admission-hero-stat-label">Experienced Faculty</div>
+                    </div>
+
+                    <div class="admission-hero-stat">
+                        <div class="admission-hero-stat-num">Research Focused</div>
+                        <div class="admission-hero-stat-label">Innovation & Publications</div>
+                    </div>
+                </div>
             </div>
-            <h1>Shaping the<br><em>Future of Learning</em></h1>
-            <p class="hero-desc">A world-class academic ecosystem built on innovation, research, and rigorous curriculum — empowering students to lead tomorrow's world.</p>
-            <div class="hero-stats" id="hero-stats"></div>
+
+            <!-- RIGHT CARD -->
+            <div id="admissionHeroCard">
+                <div class="admission-hero-card">
+
+                    <div class="admission-hero-card-title">
+                        Academic <span>Navigation</span>
+                    </div>
+
+                    <a href="#ug-programmes" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(125,31,59,0.15);color:#e07090;">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Undergraduate Programmes</strong>
+                            <span>B.A, B.Sc, B.Com & More</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#pg-programmes" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(27,123,125,0.15);color:#5cc8ca;">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Postgraduate Programmes</strong>
+                            <span>M.A, M.Sc, M.Com & More</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#research" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Research & PhD</strong>
+                            <span>Innovation & Publications</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#departments" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(45,134,89,0.15);color:#5ecc8c;">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Departments</strong>
+                            <span>Explore Academic Units</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                    <a href="#syllabus" class="admission-quick-link">
+                        <div class="admission-quick-link-icon" style="background:rgba(212,165,116,0.15);color:#D4A574;">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="admission-quick-link-text">
+                            <strong>Syllabus & Curriculum</strong>
+                            <span>Download Course Structure</span>
+                        </div>
+                        <i class="fas fa-chevron-right admission-quick-link-arrow"></i>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
