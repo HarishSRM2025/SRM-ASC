@@ -31,7 +31,7 @@ const QuicklinkHTML=`
     <div class="quick-links">
         <a href="#admissions" class="quick-link"><i class="fas fa-file-alt"></i> Apply Now</a>
         <a href="#" class="quick-link"><i class="fas fa-user"></i> Student Login</a>
-        <a href="#" class="quick-link"><i class="fas fa-graduation-cap"></i> Alumni Portal</a>
+        <a href="./alumini.html" class="quick-link"><i class="fas fa-graduation-cap"></i> Alumni Portal</a>
         <a href="#" class="quick-link"><i class="fas fa-download"></i> Prospectus</a>
         <a href="#" class="quick-link"><i class="fas fa-shield-alt"></i> Anti-Ragging</a>
     </div>
